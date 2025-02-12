@@ -83,6 +83,51 @@ body {
   margin-bottom: 5rem;
 }
 
+.title-secondary {
+  font-size: 3.6rem;
+  letter-spacing: 1rem;
+  text-align: center;
+  font-weight: 800;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.033%, #A14F03 99.941%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.4s;
+  backface-visibility: hidden;
+}
+.title-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.title-third {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.2rem;
+}
+
+.margin-bottom-80px {
+  margin-bottom: 8rem;
+}
+
+.margin-bottom-50px {
+  margin-bottom: 5rem;
+}
+
+.margin-bottom-30px {
+  margin-bottom: 3rem;
+}
+
+.margin-bottom-10px {
+  margin-bottom: 1rem;
+}
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;
@@ -122,6 +167,48 @@ body {
   animation: btntop 5s ease-out;
 }
 
+.btn-text:link, .btn-text:visited {
+  color: #777777;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.9rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: 0.1rem #A14F03 solid;
+  display: inline-block;
+}
+.btn-text:hover {
+  color: #ffffff;
+  background: #BA8554;
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 55%;
+  position: absolute;
+  transition: all 0.3s;
+  z-index: 10;
+}
+.composition__photo_n1 {
+  top: 0;
+  left: 2rem;
+}
+.composition__photo_n2 {
+  top: 2rem;
+  right: 0rem;
+}
+.composition__photo_n3 {
+  top: 15rem;
+  left: 10rem;
+}
+.composition__photo:hover {
+  transform: scale(1.1);
+  z-index: 20;
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -146,7 +233,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background: yellow;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -183,11 +269,14 @@ body {
 }
 
 [class^=col-] {
-  background: green;
   float: left;
 }
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+
+.section-about {
+  padding-top: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
