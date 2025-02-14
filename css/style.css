@@ -275,8 +275,29 @@ body {
   margin-right: 6rem;
 }
 
+.section-adventure {
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 85%);
+}
+
+.card-adventure {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 0.4s;
+  max-height: 32rem;
+}
+.card-adventure:hover {
+  transform: translateY(-1.5rem);
+}
+
 .section-about {
   padding-top: 8rem;
+}
+
+.section-adventure {
+  padding: 21rem;
+  background: linear-gradient(93.43deg, rgba(186, 133, 84, 0.7) 16.331%, rgba(0, 0, 0, 0.7) 98.812%), url(../img/photo-ballons-section2.jpeg) center/cover no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
