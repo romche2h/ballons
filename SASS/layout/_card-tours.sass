@@ -1,0 +1,90 @@
+.cart-tours
+    width: 100%
+    height: 52rem
+    perspective: 150rem
+    position: relative
+    &__side
+        height: 50rem
+        transition: transform 0.5s ease-out
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        backface-visibility: hidden
+        box-shadow: $box-shadow
+        // &_front
+        &_back
+            background: linear-gradient(120.00deg, $color-brown-lite ,$color-brown-dark)
+            transform: rotateY(180deg)
+
+    &:hover &__side_front
+        transform: rotateY(-180deg)
+    &:hover &__side_back
+        transform: rotateY(0)  
+
+    &__img
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+        height: 21rem
+        &_1
+            background: $color-brown-lite url(../img/cart-1.png) center / cover no-repeat
+        &_2
+            background: $color-brown-lite url(../img/cart-2.png) center / cover no-repeat
+
+        &_3        
+            background: $color-brown-lite url(../img/cart-3.png) center / cover no-repeat
+
+        
+    &__title
+        font-size: 2.8rem
+        font-weight: 300
+        line-height: 3.4rem
+        letter-spacing: .2rem
+        text-align: right
+        position: absolute
+        top: 17rem
+        right: 0rem
+    &__span
+        color: $color-white
+        background: linear-gradient(90deg, $color-brown-lite 3.646%,$color-brown-dark)
+        padding: 1rem 2rem .3rem 2rem
+
+        // &_1
+        &_2    
+            position: absolute
+            top: 3.4rem
+            right: 0    
+            padding-bottom: 1rem
+            padding-top: 0
+    &__info
+        ul
+            list-style: none
+            padding: 3rem
+            li
+                color: $color-gray
+                font-size: $font-size-paragraph
+                font-weight: 700
+                line-height: 1.9rem
+                letter-spacing: .2rem
+                text-decoration-line: underline   
+                text-align: center
+                &:not(:last-child)
+                    margin-bottom: 2rem
+    &__container
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+    &__text
+        margin-bottom: 8rem
+        letter-spacing: .2rem
+        text-align: center
+        color: $color-white
+        &_1
+            font-size: $font-size-paragraph
+            font-weight: 300
+        &_2    
+            font-size: 6rem 
+            font-weight: 500
+       
+.text-align-center
+    text-align: center       

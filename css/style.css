@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: rgb(247, 247, 247);
 }
 
 body {
@@ -139,6 +139,8 @@ body {
   transition: all 0.5s;
   position: relative;
   font-size: 2rem;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+  display: inline-block;
 }
 .btn:hover {
   transform: translateY(-0.4rem);
@@ -165,6 +167,13 @@ body {
 }
 .btn_animated {
   animation: btntop 5s ease-out;
+}
+
+.btn-reserve {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn-text:link, .btn-text:visited {
@@ -291,13 +300,120 @@ body {
   transform: translateY(-1.5rem);
 }
 
+.cart-tours {
+  width: 100%;
+  height: 52rem;
+  perspective: 150rem;
+  position: relative;
+}
+.cart-tours__side {
+  height: 50rem;
+  transition: transform 0.5s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+.cart-tours__side_back {
+  background: linear-gradient(120deg, #BA8554, #A14F03);
+  transform: rotateY(180deg);
+}
+.cart-tours:hover .cart-tours__side_front {
+  transform: rotateY(-180deg);
+}
+.cart-tours:hover .cart-tours__side_back {
+  transform: rotateY(0);
+}
+.cart-tours__img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  height: 21rem;
+}
+.cart-tours__img_1 {
+  background: #BA8554 url(../img/cart-1.png) center/cover no-repeat;
+}
+.cart-tours__img_2 {
+  background: #BA8554 url(../img/cart-2.png) center/cover no-repeat;
+}
+.cart-tours__img_3 {
+  background: #BA8554 url(../img/cart-3.png) center/cover no-repeat;
+}
+.cart-tours__title {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 3.4rem;
+  letter-spacing: 0.2rem;
+  text-align: right;
+  position: absolute;
+  top: 17rem;
+  right: 0rem;
+}
+.cart-tours__span {
+  color: #ffffff;
+  background: linear-gradient(90deg, #BA8554 3.646%, #A14F03);
+  padding: 1rem 2rem 0.3rem 2rem;
+}
+.cart-tours__span_2 {
+  position: absolute;
+  top: 3.4rem;
+  right: 0;
+  padding-bottom: 1rem;
+  padding-top: 0;
+}
+.cart-tours__info ul {
+  list-style: none;
+  padding: 3rem;
+}
+.cart-tours__info ul li {
+  color: #777777;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.9rem;
+  letter-spacing: 0.2rem;
+  text-decoration-line: underline;
+  text-align: center;
+}
+.cart-tours__info ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.cart-tours__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cart-tours__text {
+  margin-bottom: 8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  color: #ffffff;
+}
+.cart-tours__text_1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.cart-tours__text_2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
 .section-about {
   padding-top: 8rem;
 }
 
 .section-adventure {
-  padding: 21rem;
+  padding: 21rem 0;
   background: linear-gradient(93.43deg, rgba(186, 133, 84, 0.7) 16.331%, rgba(0, 0, 0, 0.7) 98.812%), url(../img/photo-ballons-section2.jpeg) center/cover no-repeat;
+}
+
+.section-tours {
+  padding-top: 21rem;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
