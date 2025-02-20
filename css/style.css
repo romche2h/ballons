@@ -98,6 +98,10 @@ body {
   transform: scale(1.2);
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
+.title-secondary__header {
+  padding: 8rem 0 9.5rem;
+  color: white;
+}
 
 .title-third {
   font-size: 2rem;
@@ -284,10 +288,6 @@ body {
   margin-right: 6rem;
 }
 
-.section-adventure {
-  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 85%);
-}
-
 .card-adventure {
   padding: 2.5rem;
   background: rgba(255, 255, 255, 0.8);
@@ -402,6 +402,55 @@ body {
   text-align: center;
 }
 
+.cart-feedback {
+  width: 85%;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 6rem;
+  transform: skewX(-15deg);
+}
+.cart-feedback > * {
+  transform: skewX(15deg);
+}
+.cart-feedback:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.cart-feedback__img {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 100rem;
+  float: left;
+  shape-outside: circle(50%);
+  margin-right: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+.cart-feedback__img img {
+  width: 100%;
+}
+.cart-feedback__name {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+  letter-spacing: 0.2rem;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  opacity: 0;
+  transition: all 0.4s;
+}
+.cart-feedback:hover .cart-feedback__name {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.cart-feedback:hover img {
+  filter: blur(0.7rem);
+}
+
 .section-about {
   padding-top: 8rem;
 }
@@ -409,11 +458,17 @@ body {
 .section-adventure {
   padding: 21rem 0;
   background: linear-gradient(93.43deg, rgba(186, 133, 84, 0.7) 16.331%, rgba(0, 0, 0, 0.7) 98.812%), url(../img/photo-ballons-section2.jpeg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 85%);
 }
 
 .section-tours {
   padding-top: 21rem;
   position: relative;
+}
+
+.section-feedback {
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.6) 35.937%, rgba(0, 0, 0, 0.6) 100%), url("../img/feedback.png") center/cover no-repeat;
+  height: 120rem;
 }
 
 /*# sourceMappingURL=style.css.map */
