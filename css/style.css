@@ -589,6 +589,102 @@ body {
   color: #BA8554;
 }
 
+.navigation__toggle {
+  display: none;
+}
+.navigation__button {
+  background: #ffffff;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 10rem;
+  right: 10rem;
+  z-index: 200;
+  text-align: center;
+  cursor: pointer;
+}
+.navigation__background {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: radial-gradient(#BA8554, #A14F03);
+  position: fixed;
+  right: 11rem;
+  top: 11rem;
+  z-index: 100;
+  transition: all 0.7s;
+}
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 150;
+  opacity: 0;
+  width: 0;
+  transition: all 0.7s;
+}
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  width: 100%;
+}
+.navigation__item {
+  text-align: center;
+}
+.navigation__item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.navigation__link {
+  font-size: 4rem;
+  color: #ffffff;
+  letter-spacing: 0.5rem;
+  text-decoration: none;
+  background: linear-gradient(120deg, transparent 0%, transparent 50%, #ffffff 50%);
+  background-size: 220%;
+  padding: 1rem 2rem;
+  transition: all 0.5s;
+  display: inline-block;
+}
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #A14F03;
+  transform: translateX(1rem);
+}
+.navigation__toggle:checked ~ .navigation__background {
+  transform: scale(80);
+}
+.navigation__toggle:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1;
+}
+.navigation__elipse {
+  position: relative;
+  margin-top: 37px;
+}
+.navigation__elipse, .navigation__elipse::before, .navigation__elipse::after {
+  width: 30px;
+  height: 2px;
+  background: #000000;
+  display: inline-block;
+}
+.navigation__elipse::before, .navigation__elipse::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.navigation__elipse::before {
+  top: -10px;
+}
+.navigation__elipse::after {
+  top: 10px;
+}
+
 .section-about {
   padding-top: 8rem;
 }

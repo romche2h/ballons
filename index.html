@@ -12,12 +12,41 @@
   </head>
   <body>
     <div class="container">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__toggle" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__elipse"></span>
+        </label>
+        <div class="navigation__background"></div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">О НАС</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">СКИДКИ</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">ЛУЧШИЕ ТУРЫ</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">КАЛЬКУЛЯТОР ЦЕНЫ</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">СВЯЗАТЬСЯ С НАМИ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <header class="header">
         <img
           class="header__logo"
           src="/icons/header__logo.svg"
           alt="Логотип воздушный шар"
         />
+        <!-- <button class="header__button">
+          <img src="/icons/elipse.svg" alt="лого меню" class="header__elipse" />
+        </button> -->
         <div class="header__box">
           <h1 class="title-first">
             <span class="title-first__main">ТУРЫ НА ВОЗДУШНОМ ШАРЕ</span>
