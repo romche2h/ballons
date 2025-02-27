@@ -37,6 +37,26 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
 
 body {
   padding: 5rem;
@@ -44,7 +64,7 @@ body {
 }
 
 .container {
-  background-color: rgb(247, 247, 247);
+  background-color: #ffffff;
 }
 
 body {
@@ -665,11 +685,11 @@ body {
 }
 .navigation__elipse {
   position: relative;
-  margin-top: 37px;
+  margin-top: 3.7rem;
 }
 .navigation__elipse, .navigation__elipse::before, .navigation__elipse::after {
-  width: 30px;
-  height: 2px;
+  width: 3rem;
+  height: 0.2rem;
   background: #000000;
   display: inline-block;
 }
@@ -679,10 +699,10 @@ body {
   left: 0;
 }
 .navigation__elipse::before {
-  top: -10px;
+  top: -1rem;
 }
 .navigation__elipse::after {
-  top: 10px;
+  top: 1rem;
 }
 
 .section-about {
