@@ -9,6 +9,9 @@
         padding: 1rem
         border-bottom: .1rem $color-brown-dark solid
         display: inline-block
+        @include respond(tab-land)
+            margin-bottom: 2rem
+
     &:hover
         color:$color-white
         background: $color-brown-lite

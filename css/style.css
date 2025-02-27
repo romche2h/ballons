@@ -37,7 +37,7 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
   html {
     font-size: 56.25%;
   }
@@ -91,6 +91,11 @@ body {
   animation-duration: 5s;
   backface-visibility: hidden;
 }
+@media (max-width: 1240px) {
+  .title-first__main {
+    font-size: 4rem;
+  }
+}
 .title-first__secondary {
   display: block;
   font-size: 4rem;
@@ -101,6 +106,12 @@ body {
   animation-duration: 5s;
   backface-visibility: hidden;
   margin-bottom: 5rem;
+}
+@media (max-width: 1240px) {
+  .title-first__secondary {
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
 }
 
 .title-secondary {
@@ -114,6 +125,11 @@ body {
   transition: all 0.4s;
   backface-visibility: hidden;
 }
+@media (max-width: 1240px) {
+  .title-secondary {
+    font-size: 3rem;
+  }
+}
 .title-secondary:hover {
   transform: scale(1.2);
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
@@ -125,15 +141,20 @@ body {
 .title-secondary__margin-0px {
   margin: 0;
   text-align: left;
+  font-size: 2.5rem;
 }
 .title-secondary__margin-0px:hover {
   transform: scale(1.1);
 }
-
 .title-third {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
+}
+@media (max-width: 1240px) {
+  .title-third {
+    font-size: 1.8rem;
+  }
 }
 
 .paragraph {
@@ -141,6 +162,11 @@ body {
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0.2rem;
+}
+@media (max-width: 1240px) {
+  .paragraph {
+    font-size: 1.5rem;
+  }
 }
 
 .margin-bottom-80px {
@@ -177,6 +203,11 @@ body {
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
   display: inline-block;
   border: none;
+}
+@media (max-width: 1240px) {
+  .btn, .btn:link, .btn:visited {
+    font-size: 1.5rem;
+  }
 }
 .btn:hover {
   transform: translateY(-0.4rem);
@@ -232,6 +263,11 @@ body {
   border-bottom: 0.1rem #A14F03 solid;
   display: inline-block;
 }
+@media (max-width: 1240px) {
+  .btn-text:link, .btn-text:visited {
+    margin-bottom: 2rem;
+  }
+}
 .btn-text:hover {
   color: #ffffff;
   background: #BA8554;
@@ -270,7 +306,7 @@ body {
 }
 
 .form {
-  width: 60%;
+  width: 70%;
   padding-top: 5rem;
   padding-left: 5rem;
 }
@@ -316,9 +352,17 @@ body {
   margin-bottom: 2rem;
 }
 .form__group-radio {
-  width: 35%;
   display: inline-block;
   margin-bottom: 4rem;
+}
+.form__group-radio:not(:last-child) {
+  margin-right: 2rem;
+}
+@media (max-width: 1240px) {
+  .form__group-radio {
+    display: block;
+    margin-bottom: 2rem;
+  }
 }
 .form__label-radio {
   cursor: pointer;
@@ -441,6 +485,11 @@ body {
 .cart-tours__info ul li:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media (max-width: 1240px) {
+  .cart-tours__info ul li {
+    font-size: 1.2rem;
+  }
+}
 .cart-tours__container {
   position: absolute;
   top: 50%;
@@ -545,6 +594,11 @@ body {
   display: table;
   clear: both;
 }
+@media (max-width: 1240px) {
+  .row {
+    max-width: 90.1rem;
+  }
+}
 
 .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
@@ -553,6 +607,11 @@ body {
 .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
+@media (max-width: 1240px) {
+  .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3);
+  }
+}
 
 .col-2-of-3 {
   width: calc(2 * (100% - 2 * 6rem) / 3 + 6rem);
@@ -560,6 +619,11 @@ body {
 
 .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
+}
+@media (max-width: 1240px) {
+  .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4);
+  }
 }
 
 .col-2-of-4 {
@@ -575,6 +639,16 @@ body {
 }
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+@media (max-width: 1240px) {
+  [class^=col-]:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  [class^=col-] {
+    width: 100%;
+  }
 }
 
 .footer {
@@ -595,6 +669,11 @@ body {
 .footer__item:not(:last-child) {
   margin-right: 5rem;
 }
+@media (max-width: 1240px) {
+  .footer__item:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
 .footer__link:link, .footer__link:visited {
   display: inline-block;
   text-decoration: none;
@@ -604,7 +683,7 @@ body {
   line-height: 1.9rem;
   transition: 0.5s all;
 }
-.footer__link:hover {
+.footer__link:hover, .footer__link:active {
   transform: rotate(15deg) skew(20deg) scale(1.3);
   color: #BA8554;
 }
@@ -660,7 +739,7 @@ body {
 .navigation__item:not(:last-child) {
   margin-bottom: 5rem;
 }
-.navigation__link {
+.navigation__link:link, .navigation__link:visited {
   font-size: 4rem;
   color: #ffffff;
   letter-spacing: 0.5rem;
@@ -718,6 +797,11 @@ body {
 .section-tours {
   padding-top: 21rem;
   position: relative;
+}
+@media (max-width: 1240px) {
+  .section-tours {
+    padding-top: 0;
+  }
 }
 
 .section-feedback {

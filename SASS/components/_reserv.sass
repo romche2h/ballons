@@ -4,7 +4,7 @@
     overflow: hidden
 
 .form
-    width: 60%
+    width: 70%
     padding-top: 5rem    
     padding-left: 5rem
     &__group:not(:last-child)
@@ -43,9 +43,14 @@
             transition: 1s all
             margin-bottom: 2rem
     &__group-radio
-        width: 35%
-        display: inline-block    
-        margin-bottom: 4rem    
+        display: inline-block
+        margin-bottom: 4rem
+        &:not(:last-child)
+            margin-right: 2rem  
+        @include respond(tab-land)
+            display: block      
+            margin-bottom: 2rem
+
     &__label-radio
         cursor: pointer    
         position: relative
