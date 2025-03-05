@@ -338,6 +338,11 @@ body {
     left: 23rem;
   }
 }
+@media (max-width: 600px) {
+  .composition__photo_n1 {
+    top: -14rem;
+  }
+}
 .composition__photo_n2 {
   top: 2rem;
   right: 0rem;
@@ -346,6 +351,11 @@ body {
   .composition__photo_n2 {
     top: -14rem;
     right: 0rem;
+  }
+}
+@media (max-width: 600px) {
+  .composition__photo_n2 {
+    right: 3rem;
   }
 }
 .composition__photo_n3 {
@@ -358,6 +368,12 @@ body {
     left: 32rem;
   }
 }
+@media (max-width: 600px) {
+  .composition__photo_n3 {
+    top: -8rem;
+    left: 26rem;
+  }
+}
 .composition__photo:hover {
   transform: scale(1.1);
   z-index: 20;
@@ -368,6 +384,11 @@ body {
   background: linear-gradient(110deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, rgba(186, 133, 84, 0) 55%, rgba(161, 79, 3, 0) 100%), url(../img/reserv-foto.jpeg) center/cover no-repeat;
   overflow: hidden;
 }
+@media (max-width: 600px) {
+  .reserve {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
 
 .form {
   width: 70%;
@@ -376,7 +397,19 @@ body {
 }
 .form__group:not(:last-child) {
   margin-bottom: 3rem;
-  margin-bottom: 0rem;
+}
+@media (max-width: 900px) {
+  .form__group:not(:last-child) {
+    margin-bottom: 0rem;
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    width: 114%;
+  }
+  .form__group:not(:last-child) {
+    margin-bottom: -1rem;
+  }
 }
 @media (max-width: 900px) {
   .form {
@@ -608,6 +641,11 @@ body {
 @media (max-width: 900px) {
   .cart-feedback {
     padding: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .cart-feedback {
+    padding: 1.1rem;
   }
 }
 .cart-feedback > * {
@@ -897,6 +935,11 @@ body {
 @media (max-width: 900px) {
   .section-adventure {
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  }
+}
+@media (max-width: 600px) {
+  .section-adventure {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
   }
 }
 
