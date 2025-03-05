@@ -29,7 +29,6 @@
             background: $color-brown-lite url(../img/cart-1.png) center / cover no-repeat
         &_2
             background: $color-brown-lite url(../img/cart-2.png) center / cover no-repeat
-
         &_3        
             background: $color-brown-lite url(../img/cart-3.png) center / cover no-repeat
 
@@ -59,6 +58,8 @@
         ul
             list-style: none
             padding: 3rem
+            @include respond(tab-port)
+                padding: 4rem
             li
                 color: $color-gray
                 font-size: $font-size-paragraph
@@ -71,6 +72,8 @@
                     margin-bottom: 2rem
                 @include respond(tab-land)
                     font-size: 1.2rem
+                @include respond(tab-port)
+                    font-size: 1.5rem    
 
 
     &__container

@@ -1,19 +1,34 @@
 .composition
     position: relative
+    @include respond(tab-port)  
+        margin: 6rem 0 0
     &__photo
         width: 55%
         position: absolute
         transition: all .3s
         z-index: 10
+        @include respond(tab-port)  
+            width: 30%
+
         &_n1
             top:0
             left: 2rem
+            @include respond(tab-port)  
+                top: -89px
+                left: 23rem
+
         &_n2
             top: 2rem
-            right: 0rem    
+            right: 0rem
+            @include respond(tab-port)
+                top: -14rem
+                right: 0rem     
         &_n3
             top: 15rem
-            left: 10rem    
+            left: 10rem
+            @include respond(tab-port)
+                top: -6rem
+                left: 32rem    
         &:hover
             transform: scale(1.1)   
             z-index: 20 

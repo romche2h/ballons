@@ -96,6 +96,11 @@ body {
     font-size: 4rem;
   }
 }
+@media (max-width: 900px) {
+  .title-first__main {
+    font-size: 2.5rem;
+  }
+}
 .title-first__secondary {
   display: block;
   font-size: 4rem;
@@ -111,6 +116,12 @@ body {
   .title-first__secondary {
     font-size: 3.5rem;
     margin-bottom: 3.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .title-first__secondary {
+    font-size: 2rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -130,6 +141,11 @@ body {
     font-size: 3rem;
   }
 }
+@media (max-width: 900px) {
+  .title-secondary {
+    margin-bottom: 0rem;
+  }
+}
 .title-secondary:hover {
   transform: scale(1.2);
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
@@ -138,14 +154,29 @@ body {
   padding: 8rem 0 9.5rem;
   color: white;
 }
+@media (max-width: 900px) {
+  .title-secondary__header {
+    padding: 4rem 0 3.5rem;
+  }
+}
 .title-secondary__margin-0px {
   margin: 0;
   text-align: left;
-  font-size: 2.5rem;
 }
 .title-secondary__margin-0px:hover {
   transform: scale(1.1);
 }
+@media (max-width: 1240px) {
+  .title-secondary__margin-0px {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .title-secondary__margin-0px {
+    font-size: 2rem;
+  }
+}
+
 .title-third {
   font-size: 2rem;
   font-weight: 700;
@@ -171,6 +202,11 @@ body {
 
 .margin-bottom-80px {
   margin-bottom: 8rem;
+}
+@media (max-width: 900px) {
+  .margin-bottom-80px {
+    margin-bottom: 2rem;
+  }
 }
 
 .margin-bottom-50px {
@@ -276,23 +312,51 @@ body {
 .composition {
   position: relative;
 }
+@media (max-width: 900px) {
+  .composition {
+    margin: 6rem 0 0;
+  }
+}
 .composition__photo {
   width: 55%;
   position: absolute;
   transition: all 0.3s;
   z-index: 10;
 }
+@media (max-width: 900px) {
+  .composition__photo {
+    width: 30%;
+  }
+}
 .composition__photo_n1 {
   top: 0;
   left: 2rem;
+}
+@media (max-width: 900px) {
+  .composition__photo_n1 {
+    top: -89px;
+    left: 23rem;
+  }
 }
 .composition__photo_n2 {
   top: 2rem;
   right: 0rem;
 }
+@media (max-width: 900px) {
+  .composition__photo_n2 {
+    top: -14rem;
+    right: 0rem;
+  }
+}
 .composition__photo_n3 {
   top: 15rem;
   left: 10rem;
+}
+@media (max-width: 900px) {
+  .composition__photo_n3 {
+    top: -6rem;
+    left: 32rem;
+  }
 }
 .composition__photo:hover {
   transform: scale(1.1);
@@ -312,6 +376,13 @@ body {
 }
 .form__group:not(:last-child) {
   margin-bottom: 3rem;
+  margin-bottom: 0rem;
+}
+@media (max-width: 900px) {
+  .form {
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
 }
 .form__input {
   width: 55%;
@@ -404,6 +475,11 @@ body {
   transition: all 0.4s;
   max-height: 32rem;
 }
+@media (max-width: 900px) {
+  .card-adventure {
+    margin: 3rem;
+  }
+}
 .card-adventure:hover {
   transform: translateY(-1.5rem);
 }
@@ -473,6 +549,11 @@ body {
   list-style: none;
   padding: 3rem;
 }
+@media (max-width: 900px) {
+  .cart-tours__info ul {
+    padding: 4rem;
+  }
+}
 .cart-tours__info ul li {
   color: #777777;
   font-size: 1.6rem;
@@ -488,6 +569,11 @@ body {
 @media (max-width: 1240px) {
   .cart-tours__info ul li {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 900px) {
+  .cart-tours__info ul li {
+    font-size: 1.5rem;
   }
 }
 .cart-tours__container {
@@ -518,6 +604,11 @@ body {
   margin: 0 auto;
   padding: 6rem;
   transform: skewX(-15deg);
+}
+@media (max-width: 900px) {
+  .cart-feedback {
+    padding: 4rem;
+  }
 }
 .cart-feedback > * {
   transform: skewX(15deg);
@@ -597,6 +688,11 @@ body {
 @media (max-width: 1240px) {
   .row {
     max-width: 90.1rem;
+  }
+}
+@media (max-width: 900px) {
+  .row {
+    max-width: 50rem;
   }
 }
 
@@ -787,11 +883,21 @@ body {
 .section-about {
   padding-top: 8rem;
 }
+@media (max-width: 900px) {
+  .section-about {
+    padding-top: 0rem;
+  }
+}
 
 .section-adventure {
   padding: 21rem 0;
   background: linear-gradient(93.43deg, rgba(186, 133, 84, 0.7) 16.331%, rgba(0, 0, 0, 0.7) 98.812%), url(../img/photo-ballons-section2.jpeg) center/cover no-repeat;
   clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 85%);
+}
+@media (max-width: 900px) {
+  .section-adventure {
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  }
 }
 
 .section-tours {

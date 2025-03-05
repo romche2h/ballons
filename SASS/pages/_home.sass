@@ -1,18 +1,21 @@
 .section-about 
     padding-top: 8rem
+    @include respond(tab-port)  
+        padding-top: 0rem
 
 .section-adventure 
     padding: 21rem 0
     background: linear-gradient(93.43deg, rgba($color-brown-lite, 0.7) 16.331%,rgba($color-black, 0.7) 98.812%), url(../img/photo-ballons-section2.jpeg) center / cover no-repeat 
     clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 85%)
+    @include respond(tab-port)
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%)
+
 
 .section-tours
     padding-top: 21rem 
     position: relative
     @include respond(tab-land)
         padding-top: 0
-
-
     
 .section-feedback
     background: linear-gradient(90deg,rgba($color-brown-lite, 0.6) 35.937%, rgba($color-black, 0.6) 100%),url("../img/feedback.png") center / cover no-repeat 
