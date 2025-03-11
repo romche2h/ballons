@@ -57,6 +57,11 @@ html {
     font-size: 75%;
   }
 }
+@media (min-width: 2560px) {
+  html {
+    font-size: 124%;
+  }
+}
 
 body {
   padding: 5rem;
